@@ -130,7 +130,7 @@ async def help_command(ctx):
     
     embed.add_field(
         name="⚠️ **Requirements for Files:**",
-        value"• File must be valid Lua/Luau code\n"
+        value="• File must be valid Lua/Luau code\n"
               "• Must contain at least 2 Lua keywords\n"
               "• UTF-8 encoding required\n"
               "• Max 10MB file size",
@@ -195,7 +195,7 @@ async def status(ctx):
     
     embed.add_field(
         name="⌚ **Uptime**",
-        value=f"Since: <t:{int(bot.user.id >> 22 / 1000 + 1420070400000 / 1000)}:R>",
+        value=f"Since: <t:{int((bot.user.id >> 22) / 1000 + 1420070400000 / 1000)}:R>",
         inline=True
     )
     
