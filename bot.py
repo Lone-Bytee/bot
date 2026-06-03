@@ -17,6 +17,9 @@ VALID_EXTENSIONS = ['.lua', '.txt']
 OBFUSCATOR_PATH = "./unveilr/main.luau"
 TEMP_DIR = "./temp_obfuscate"
 
+# REMOVE DEFAULT HELP COMMAND TO ALLOW YOUR CUSTOM !help
+bot.remove_command('help')
+
 # Create temp directory
 os.makedirs(TEMP_DIR, exist_ok=True)
 
